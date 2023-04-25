@@ -5,21 +5,21 @@ import { chatFields, chatOperations } from './ChatDescription';
 
 export class OpenAi implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'OpenAI',
-		name: 'openAi',
+		displayName: 'OpenAImelo',
+		name: 'openAimelo',
 		icon: 'file:openAi.svg',
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
 		description: 'Consume Open AI',
 		defaults: {
-			name: 'OpenAI',
+			name: 'OpenAImelo',
 		},
 		inputs: ['main'],
 		outputs: ['main'],
 		credentials: [
 			{
-				name: 'openAiApi',
+				name: 'openAiApimelo',
 				required: true,
 			},
 		],
