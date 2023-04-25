@@ -19,7 +19,7 @@ export class OpenAi implements INodeType {
 		outputs: ['main'],
 		credentials: [
 			{
-				name: 'openAiApimelo',
+				name: 'openAiApi',
 				required: true,
 			},
 		],
